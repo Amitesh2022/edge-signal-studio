@@ -7,7 +7,11 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "test": "vitest run",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "backend:test": "mvn -q -f backend/pom.xml test",
+    "backend:build": "mvn -q -f backend/pom.xml package",
+    "backend:dev": "mvn -q -f backend/pom.xml spring-boot:run",
+    "fullstack": "node scripts/run-full-stack.mjs"
   },
   "dependencies": {
     "lit": "^3.3.3"

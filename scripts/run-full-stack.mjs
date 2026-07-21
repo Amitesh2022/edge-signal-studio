@@ -1,0 +1,1 @@
+import{spawn}from'node:child_process';const processes=[spawn('mvn',['-q','-f','backend/pom.xml','spring-boot:run'],{stdio:'inherit'}),spawn('npm',["run","dev"],{stdio:'inherit'})];const stop=()=>processes.forEach(p=>p.kill('SIGTERM'));process.on('SIGINT',stop);process.on('SIGTERM',stop);processes.forEach(p=>p.on('exit',code=>{if(code)process.exitCode=code}))

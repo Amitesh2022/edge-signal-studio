@@ -1,0 +1,6 @@
+com/amitesh/portfolio/edgesignalstudio/api/PortfolioController.class
+com/amitesh/portfolio/edgesignalstudio/domain/PortfolioRecord.class
+com/amitesh/portfolio/edgesignalstudio/api/ApiExceptionHandler.class
+com/amitesh/portfolio/edgesignalstudio/service/PortfolioService.class
+com/amitesh/portfolio/edgesignalstudio/PortfolioApplication.class
+com/amitesh/portfolio/edgesignalstudio/api/CreateRecordRequest.class
